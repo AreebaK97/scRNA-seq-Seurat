@@ -1,0 +1,27 @@
+name: scrna-seurat-pipeline
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - r-base=4.5
+  - r-essentials
+  - r-devtools
+  - r-remotes
+  - git
+  - pandoc
+  - r-seurat
+  - r-seuratobject
+  #- r-seuratwrappers
+  - r-tidyverse
+  - r-patchwork
+  - r-enrichr
+  - r-future
+  - r-future.apply
+  - bioconductor-singler
+  - bioconductor-singlecellexperiment
+  - bioconductor-celldex
+ # - bioconductor-monocle3
+  - r-irkernel

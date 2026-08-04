@@ -1,0 +1,27 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Conda
+.conda/
+.env/
+
+# macOS
+.DS_Store
+
+# Linux
+*.swp
+
+# Logs
+*.log
+
+# Data
+data/raw/
+data/processed/
+
+# RDS files
+*.rds
+
+# Temporary files
+tmp/
