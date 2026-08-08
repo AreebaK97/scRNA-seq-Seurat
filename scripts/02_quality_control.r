@@ -1,5 +1,5 @@
 ###########################################################
-# Script : 01_quality_control.r
+# Script : 02_quality_control.r
 # Description : 
 # Load seurat objects and perform QC
 ###########################################################
@@ -47,11 +47,3 @@ for (i in 1:nrow(sample_metadata)){
     saveRDS(sample_obj,
         here("data", "processed", paste0(sample_metadata$sample[i], "_QC.rds")))
 }
-
-sample_obj <- readRDS(here("data", "processed", "BMMC_T1.rds"))
-
-sample_obj[["percent.mt"]] <- PercentageFeatureSet(
-        sample_obj, pattern = "^MT-"
-    )
-head(sample_obj@meta.data)
-summary(sample_obj$percent.mt)
