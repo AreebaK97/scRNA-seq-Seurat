@@ -22,6 +22,6 @@ The selected genes were centered and scaled so that genes are placed on a compar
 ### Principal Component Analysis (PCA)
 PCA was used to reduce the dimensionality of gene expression data. The number of principal components (PCs) used for downstream analysis was determined by examining the elbow plot. The plot showed that the variation started to decrease after PC 10. Therefore, the first 12 PCs were retained for further downstream analysis.
 
-![PCA Elbow Plot](figures/preprocessing/BMMC_T1_elbow_plot.png)
+![PCA Elbow Plot](figures/preprocessing/BMMC_T1_pca_elbow_plot.png)
 
 The first 12 principal components were used for subsequent neighbourhood construction, clustering, UMAP visualization and doublet detection. 
